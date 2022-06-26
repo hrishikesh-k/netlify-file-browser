@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --overlay: rgba(14, 30, 37, 0.6);
+  --tealSelection: #3c827b;
+  --white: #ffffff;
+}
+
+.light {
+  --black: #2e3c42;
+  --code: hsla(198, 45%, 10%, .02);
+  --goldDarkest: #66400f;
+  --goldLightest: #ffe4c2;
+  --grayDarker: #646e73;
+  --grayLighter: #eaebec;
+  --grayLightest: #f9fafa;
+  --pageBG: #f7fcfc;
+  --redDarker: #d32254;
+  --redDarkest: #8e0b30;
+  --redLightest: #fed7e2;
+  --tealDarker: #15847b;
+  --tealDarkest: #0d544e;
+  --tealLighter: #00ad9f;
+  --tealLightest: #c9eeea;
+}
+
+.dark {
+  --black: #0e1e25;
+  --goldDarkest: #472d0b;
+  --goldLighter: #ffad42;
+  --grayDark: #16262C;
+  --grayDarker: #48565b;
+  --grayDarkest: #243238;
+  --pageBG: #021117;
+  --redDarkest: #4b061a;
+  --redLighter: #fd5383;
+  --redLightest: #ff7aa0;
+  --tealDarker: #17272E;
+  --tealDarkest: #083532;
+  --tealLighter: #00c7b6;
+  --tealLightest: #5cebdf;
+}
+
+::-webkit-inner-spin-button, ::-webkit-search-cancel-button, ::-webkit-search-decoration {
+  @apply appearance-none;
+}
+
+[disabled] {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.bg-overlay > div {
+  max-height: calc(100vh - (2 * theme('padding.6')));
+}
+
+.expanded > div.max-h-0 {
+  @apply block max-h-fit;
+}
