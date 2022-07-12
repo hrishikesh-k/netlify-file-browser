@@ -1,0 +1,19 @@
+[build]
+  base = "/"
+  command = "npm run build"
+  publish = "/dist/"
+  [build.environment]
+    NODE_VERSION = "16"
+    NPM_FLAGS = "--force"
+[functions]
+  external_node_modules = ["express", "mongodb"]
+  node_bundler = "esbuild"
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
+[[redirects]]
+  from = "/*"
+  status = 200
+  to = "/index.html"

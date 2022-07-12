@@ -1,0 +1,254 @@
+<!doctype html>
+<html
+  class = "light"
+  lang = "en"
+  w-min-h = "full"
+  w-w = "full">
+<head>
+  <link
+    href = "/favicon.png"
+    rel = "icon"/>
+  <meta
+    charset = "utf-8"/>
+  <meta
+    content = "img-src 'self' https://*.cloudfront.net/ data:;style-src 'self' 'unsafe-inline'"
+    http-equiv = "content-security-policy"/>
+  <meta
+    content = "width=device-width,initial-scale=1.0"
+    name = "viewport"/>
+  <!--
+    <script
+      src = "http://localhost:8098">
+    </script>
+  -->
+  <style
+    lang = "windi">
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    :root {
+      --black: #151a1e;
+      --popper-theme-border-radius: 0.25rem;
+      --popper-theme-padding: 0.25rem;
+      --white: #ffffff;
+    }
+    ::selection {
+      background: #139baa;
+      color: #ffffff;
+    }
+    input[type = "search"]::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+    .dark {
+      --blue100: #a5befd;
+      --blue200: #597ef8;
+      --blue300: #193ed2;
+      --blue400: #0a1e8f;
+      --blue500: #040e4e;
+      --code: #070b0d;
+      --gold100: #ffeba3;
+      --gold200: #ffd152;
+      --gold300: #e89c02;
+      --gold400: #925a07;
+      --gold500: #4f2f02;
+      --gray100: #e8ebed;
+      --gray200: #a4a8ad;
+      --gray300: #808589;
+      --gray400: #4c5257;
+      --gray500: #2a2e32;
+      --gray600: #22262a;
+      --gray700: #1c2126;
+      --hover: rgba(255, 255, 255, 0.03);
+      --logoAnimationPrimary: #151a1e;
+      --overlay: hsla(197, 84%, 5%, .75);
+      --page: hsl(207, 30%, 4%);
+      --popper-theme-background-color: #31c9c9;
+      --popper-theme-background-color-hover: #31c9c9;
+      --popper-theme-text-color: #032b3a;
+      --purple100: #b7a6fc;
+      --purple200: #9a72fd;
+      --purple300: #6d2ff4;
+      --purple400: #340f85;
+      --purple500: #1c0849;
+      --red100: #ffd2bd;
+      --red200: #ff9785;
+      --red300: #f85454;
+      --red400: #941e34;
+      --red500: #470b1b;
+      --teal100: #9ff9e1;
+      --teal200: #86f3df;
+      --teal300: #31c9c9;
+      --teal400: #0f6980;
+      --teal500: #032b3a;
+    }
+    .light {
+      --blue100: #d2e0fe;
+      --blue200: #799cfb;
+      --blue300: #2451f5;
+      --blue400: #112cb0;
+      --blue500: #061574;
+      --code: hsla(198, 45%, 10%, .02);
+      --gold100: #fff7d1;
+      --gold200: #ffdd75;
+      --gold300: #ffb914;
+      --gold400: #b7780b;
+      --gold500: #7c4a04;
+      --gray100: #f9fafa;
+      --gray200: #f2f5f8;
+      --gray300: #e8ebed;
+      --gray400: #a4a8ad;
+      --gray500: #808589;
+      --gray600: #676c6f;
+      --gray700: #34383c;
+      --hover: rgba(14, 30, 37, 0.03);
+      --logoAnimationPrimary: #ffffff;
+      --overlay: hsla(198, 45%, 10%, .6);
+      --popper-theme-background-color: #9ff9e1;
+      --popper-theme-background-color-hover: #9ff9e1;
+      --popper-theme-text-color: #054861;
+      --primary: #ffffff;
+      --purple100: #e3dcfe;
+      --purple200: #a886fd;
+      --purple300: #7538fa;
+      --purple400: #3d119c;
+      --purple500: #230a5c;
+      --red100: #ffece0;
+      --red200: #ffb59e;
+      --red300: #ff6b61;
+      --red400: #b5303e;
+      --red500: #78122d;
+      --teal100: #e1fef1;
+      --teal200: #9ff9e1;
+      --teal300: #5cebdf;
+      --teal400: #139baa;
+      --teal500: #054861;
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 300;
+      src: url('/fonts/ubuntu-300-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: italic;
+      font-weight: 300;
+      src: url('/fonts/ubuntu-300-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/fonts/ubuntu-400-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: italic;
+      font-weight: 400;
+      src: url('/fonts/ubuntu-400-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      src: url('/fonts/ubuntu-500-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: italic;
+      font-weight: 500;
+      src: url('/fonts/ubuntu-500-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 700;
+      src: url('/fonts/ubuntu-700-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu';
+      font-style: italic;
+      font-weight: 700;
+      src: url('/fonts/ubuntu-700-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu Condensed';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/fonts/ubuntu-condensed-400-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu Mono';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/fonts/ubuntu-mono-400-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu Mono';
+      font-style: italic;
+      font-weight: 400;
+      src: url('/fonts/ubuntu-mono-400-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu Mono';
+      font-style: normal;
+      font-weight: 700;
+      src: url('/fonts/ubuntu-mono-700-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Ubuntu Mono';
+      font-style: italic;
+      font-weight: 700;
+      src: url('/fonts/ubuntu-mono-700-italic.woff2') format('woff2');
+    }
+    .popper {
+      @apply text-xs;
+    }
+  </style>
+  <title>
+    Netlify File Browser
+  </title>
+</head>
+  <body
+    w-bg = "white dark:page"
+    w-min-h = "full"
+    w-p = "6"
+    w-scrollbar = "thin thumb-teal400 track-teal500 dark:thumb-teal400 dark:track-teal500"
+    w-text = "black dark:white"
+    w-w = "full">
+    <noscript
+      w-align = "items-center"
+      w-flex = "~"
+      w-h = "full"
+      w-justify = "center"
+      w-w = "full">
+      <p
+        w-w = "full">
+        Please enable JavaScript to run this application.
+      </p>
+    </noscript>
+    <div
+      w-h = "full"
+      w-m = "x-auto"
+      w-max-w = "320"
+      w-w = "full">
+    </div>
+    <script
+      src = "/src/app.js"
+      type = "module">
+    </script>
+  </body>
+</html>
