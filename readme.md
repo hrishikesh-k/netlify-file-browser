@@ -4,7 +4,7 @@ A single-page web-app to browse and download your Netlify deploys. Built with Vu
 
 ## Local testing:
 
-The app is built in Node 16 environment (tested in Node 18 as well). To develop locally:
+The app is built in Node 18 environment. To develop locally:
 
 * Clone the repo.
 * Create a new Netlify OAuth app [here](https://app.netlify.com/user/applications#oauth-applications) with `Redirect URI` as `http://localhost:8888/api/callback`

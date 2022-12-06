@@ -5,15 +5,9 @@ export default defineConfig({
   },
   darkMode: 'class',
   extract: {
-    include: [
-      './index.html',
-      './src/**/*.vue'
-    ]
+    include: ['./index.html', './src/**/*.vue']
   },
-  plugins: [
-    require('@windicss/plugin-scrollbar'),
-    require('windicss/plugin/aspect-ratio')
-  ],
+  plugins: [require('@windicss/plugin-scrollbar'), require('windicss/plugin/aspect-ratio')],
   theme: {
     boxShadow: {
       shallow: '0 1px 10px 0 hsla(210, 7%, 22%, .06), 0 2px 4px 0 hsla(210, 7%, 22%, .08)'

@@ -75,13 +75,13 @@ router.beforeEach(to => {
         url: '/api/logout'
       }).then(() => {
         return {
-          name: 'Index'
+          path: '/'
         }
       })
     } else {
       localStorage.removeItem('csrf')
       return {
-        name: to.name
+        path: to.path
       }
     }
   }

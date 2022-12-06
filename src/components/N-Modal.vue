@@ -57,10 +57,10 @@
           w-h = "9"
           w-w = "9">
           <Popper
+            arrow
+            hover
             content = "Close"
-            placement = "bottom-end"
-            v-bind:arrow = "true"
-            v-bind:hover = "true">
+            placement = "bottom-end">
             <NButton
               icon = "M6 18L18 6M6 6l12 12"
               v-on:click = "emit('close')"/>

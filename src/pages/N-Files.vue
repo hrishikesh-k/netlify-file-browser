@@ -107,6 +107,7 @@
     axios({
       url: `/api/files?deploy=${route.params.deploy}`
     }).then(filesResponse => {
+      store.user = true
       let current
       const output = {
         '_root': []
