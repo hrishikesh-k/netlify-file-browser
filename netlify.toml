@@ -4,7 +4,6 @@
   publish = "/dist/"
   [build.environment]
     NODE_VERSION = "18"
-    NPM_FLAGS = "--force"
 [functions]
   external_node_modules = ["express", "mongodb"]
   node_bundler = "esbuild"

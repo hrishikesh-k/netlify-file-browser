@@ -10,7 +10,7 @@
   import NButton from '../components/N-Button.vue'
   import NIcon from '../components/N-Icon.vue'
   import NModal from '../components/N-Modal.vue'
-  const npmPackages = ['@vitejs/plugin-vue', '@vue/devtools', '@windicss/plugin-scrollbar', 'axios', 'cookie-parser', 'date-fns', 'express', 'fflate', 'file-extension-icon-js', 'file-size', 'mongodb', 'netlify-cli', 'pinia', 'qs', 'serverless-http', 'simple-oauth2', 'streamsaver', 'uuid', 'vite', 'vite-plugin-html', 'vite-plugin-windicss', 'vite-svg-loader', 'vue', 'vue-router', 'vue3-popper', 'windicss']
+  const npmPackages = ['@vitejs/plugin-vue', '@vue/devtools', '@windicss/plugin-scrollbar', 'axios', 'cookie-parser', 'date-fns', 'express', 'fflate', 'file-extension-icon-js', 'file-size', 'mongodb', 'netlify-cli', 'pinia', 'qs', 'serverless-http', 'streamsaver', 'uuid', 'vite', 'vite-plugin-html', 'vite-plugin-windicss', 'vite-svg-loader', 'vue', 'vue-router', 'vue3-popper', 'windicss']
   const otherCredits = [{
     link: 'https://www.heroicons.com/',
     name: 'Heroicons'
@@ -131,7 +131,7 @@
     v-on:close = "aboutModal = false">
     <p
       w-w = "full">
-      Netlify File Browser v2.0.0
+      Netlify File Browser v2.0.2
       <br/>
       <a
         href = "https://www.github.com/Hrishikesh-K/netlify-file-browser/tree/v2"

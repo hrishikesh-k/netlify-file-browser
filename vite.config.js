@@ -5,31 +5,24 @@ import Vue from '@vitejs/plugin-vue'
 import WindiCSS from 'vite-plugin-windicss'
 export default defineConfig({
   build: {
-    minify: 'terser',
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[name].[ext]',
-        chunkFileNames: `assets/[name].js`,
-        entryFileNames: `assets/[name].js`
+        chunkFileNames: 'chunks/[name].js',
+        entryFileNames: 'entries/[name].js'
       }
     },
-    target: 'esnext',
-    terserOptions: {
-      format: {
-        comments: false
-      }
-    }
+    sourcemap: true,
+    target: 'esnext'
   },
-  plugins: [
-    createHtmlPlugin({
-      minify: true
-    }),
-    svgLoader({
-      svgo: false
-    }),
-    Vue({
-      reactivityTransform: true
-    }),
-    WindiCSS()
-  ]
+  esbuild: {
+    legalComments: 'none'
+  },
+  plugins: [createHtmlPlugin({
+    minify: true
+  }), svgLoader({
+    svgo: false
+  }), Vue({
+    reactivityTransform: true
+  }), WindiCSS()]
 })
