@@ -44,10 +44,10 @@
     })
   }
   function toggleTheme() {
-    if (theme.value === 'dark') {
-      theme.value = 'light'
+    if (theme === 'dark') {
+      theme = 'light'
     } else {
-      theme.value = 'dark'
+      theme = 'dark'
     }
     localStorage.setItem('theme', theme)
     window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', checkTheme)
@@ -131,7 +131,7 @@
     v-on:close = "aboutModal = false">
     <p
       w-w = "full">
-      Netlify File Browser v2.0.2
+      Netlify File Browser v2.0.3
       <br/>
       <a
         href = "https://www.github.com/Hrishikesh-K/netlify-file-browser/tree/v2"

@@ -7,6 +7,7 @@
 </script>
 <template>
   <svg
+    fill-rule="evenodd"
     viewBox = "0 0 24 24"
     w-h = "5"
     w-w = "5"

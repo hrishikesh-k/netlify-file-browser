@@ -49,9 +49,9 @@
     }).then(findResponse => {
       router.push(`/accounts/${route.params.account}/sites/${findResponse.data.id}/deploys`)
     }).catch(siteError => {
-      error.value = siteError.response.status
+      store.error.value = siteError.response.status
     }).finally(() => {
-      loading.value = false
+      loading = false
     })
   }
   onMounted(() => {
