@@ -10,7 +10,7 @@
     "fflate": "0.7.4",
     "file-extension-icon-js": "1.1.6",
     "file-size": "1.0.0",
-    "mongodb": "5.1.0",
+    "mongodb": "5.8.0",
     "netlify-cli": "13.0.1",
     "pinia": "2.0.33",
     "qs": "6.11.0",
